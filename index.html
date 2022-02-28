@@ -12,104 +12,115 @@
   <!-- Sezione di testa -->
   <header>
     <h1>Il mio Viaggio a Londra</h1>
-    <img src="./img/assets/img/pexels-bill-emrich-230794-0.jpg" alt="skyline1">
-    <img src="./img/assets/img/pexels-bill-emrich-230794-1.jpg"alt="skyline2">
-    <img src="./img/assets/img/pexels-bill-emrich-230794-2.jpg" alt="skyline3">
+    <!-- Correzzione: le tre immagini sarebbe stato corretto includele all'interno di un div, in modo da non averle sparse per il codice; alt dovrebbe essere il piú descrittivo possibile dell'immagine inserita -->
+    <!-- <div> -->
+    <img src="./img/assets/img/pexels-bill-emrich-230794-0.jpg" alt="skyline1" title="skyline1">
+    <img src="./img/assets/img/pexels-bill-emrich-230794-1.jpg"alt="skyline2" title="skyline2">
+    <img src="./img/assets/img/pexels-bill-emrich-230794-2.jpg" alt="skyline3" title="skyline3">
+    <!-- </div> -->
   </header>
 
   <hr>
-
+  <!-- Correzzione: É meglio inserire tutte le varie liste e tabelle all'interno di <section> in modo da avere una separazione e una distinzione ancora maggiore tra le relative sezioni -->
   <main>
 
     <!-- Dati tabellari -->
     <h2>Le mie spese</h2>
+    <section>
+      <table>
 
-    <table>
+        <thead>
+          <tr>
+            <th>Numero</th>
+            <th>Descrizione</th>
+            <th>Costo</th>
+          </tr>
+        </thead>
+        <!-- Correzione: il simbolo EURO é un carattere speciale e va dunque inserito tramite l'Entity Code-->
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Biglietto Aereo</td>
+            <td>120&euro;</td>
+          </tr>
 
-      <thead>
-        <tr>
-          <th>Numero</th>
-          <th>Descrizione</th>
-          <th>Costo</th>
-        </tr>
-      </thead>
+          <tr>
+            <td>1</td>
+            <td>Biglietto Aereo</td>
+            <td>120&euro;</td>
+          </tr> 
 
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Biglietto Aereo</td>
-          <td>120€</td>
-        </tr>
+          <tr>
+            <td>1</td>
+            <td>Biglietto Aereo</td>
+            <td>120&euro;</td>
+          </tr>
+        </tbody>
 
-        <tr>
-          <td>1</td>
-          <td>Biglietto Aereo</td>
-          <td>120€</td>
-        </tr> 
-
-        <tr>
-          <td>1</td>
-          <td>Biglietto Aereo</td>
-          <td>120€</td>
-        </tr>
-      </tbody>
-
-      <tfoot>
-        <tr>
-          <td colspan="2">Totale</td>
-          <td>360€</td>
-        </tr>
-      </tfoot>
-    </table>
+        <tfoot>
+          <tr>
+            <td colspan="2">Totale</td>
+            <td>360€</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
     <!-- /Dati tabellari -->
     <hr>
     <!-- Liste -->
-    <h4>Cose da fare</h4>
+    <section>
+      <h4>Cose da fare</h4>
 
-    <ul>
-      <li>Visitare la Tower of London &#10007;</li>
-      <li>Visitare greenwich &#x2713;</li>
-      <li>Ascoltare un artista di strada a Covent Garden &#x2713;</li>
-      <li>Mangiare il tipico Fish and Chips inglese &#10007;</li>
-    </ul>
+      <ul>
+        <li>Visitare la Tower of London &#10007;</li>
+        <li>Visitare greenwich &#x2713;</li>
+        <li>Ascoltare un artista di strada a Covent Garden &#x2713;</li>
+        <li>Mangiare il tipico Fish and Chips inglese &#10007;</li>
+      </ul>
 
-    <hr>
+      <hr>
 
-    <h4>Info utili:</h4>
+      <h4>Info utili:</h4>
+      <!-- Correzzione: i titoli dei punti delle liste é bene inserirli al;l'interno di <span> in modo da avere maggiore versatilitá a livello di personalizzazione in css e maggiore chiarezza a livello di codice -->
+      <ol>
+        <li>
+          <span>Numeri utili di emergenza</span>
+          <ul>
+            <li><strong>999</strong> - Emergenza</li>
+            <li><strong>101</strong> - Numero poizia</li>
+            <li><strong>111</strong> - Numero assistenza medica</li>
+          </ul>
+        </li>
 
-    <ol>
-      <li>Numeri utili di emergenza
-        <ul>
-          <li><strong>999</strong> - Emergenza</li>
-          <li><strong>101</strong> - Numero poizia</li>
-          <li><strong>111</strong> - Numero assistenza medica</li>
-        </ul>
-      </li>
+        <li>
+          <span>Hotel</span>
+          <ul>
+            <li><strong>Nome hotel</strong>: Buckingham Palace</li>
+            <li><strong>Indirizzo hotel</strong>: Westmister, London SW1A 1AA, Regno Unito</li>
+          </ul>
+        </li>
 
-      <li>Hotel
-        <ul>
-          <li><strong>Nome hotel</strong>: Buckingham Palace</li>
-          <li><strong>Indirizzo hotel</strong>: Westmister, London SW1A 1AA, Regno Unito</li>
-        </ul>
-      </li>
-
-      <li>Aereo
-        <ul>
-          <li><strong>Volo di Andata</strong>: Y1234X, ore 9:30 da Milano Malpensa</li>
-          <li><strong>Volo di Ritorno</strong>: Y1236X, ore 18:30 da London Heathrow</li>
-        </ul>
-      </li>
-    </ol>
+        <li>
+          <span>Aereo</span>
+          <ul>
+            <li><strong>Volo di Andata</strong>: Y1234X, ore 9:30 da Milano Malpensa</li>
+            <li><strong>Volo di Ritorno</strong>: Y1236X, ore 18:30 da London Heathrow</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
     <!-- /Liste -->
   </main>
 
   <hr>
   <!-- Sezione finale -->
-  <footer>
-    <h4>Le foto</h4>
+  <section>
+    <footer>
+      <h4>Le foto</h4>
 
-    <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="bridge-of-London">
-    <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg" alt="London-wider-area">
-  </footer>
+      <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="bridge-of-London">
+      <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg" alt="London-wider-area">
+    </footer>
+  </section>
 </body>
 </html>
